@@ -1,0 +1,34 @@
+# Build artifacts
+/build/
+/bin/
+/lib/
+
+# CMake files
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+
+# Object files
+*.o
+*.so
+*.dll
+*.dylib
+*.a
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.user
+*.suo
+*.ncb
+*.opendb
+*.VC.db
+*.VC.opendb
+
+# clangd cache
+.cache/
