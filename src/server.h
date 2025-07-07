@@ -1,6 +1,8 @@
 #ifndef SERVER_H
 #define SERVER_H
 
-void start_server();
+#include "config.h"
+
+void start_server(Config config);
 
 #endif //SERVER_H

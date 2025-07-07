@@ -32,3 +32,5 @@ cmake_install.cmake
 
 # clangd cache
 .cache/
+
+redis_server.log
