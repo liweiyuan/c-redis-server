@@ -1,17 +1,13 @@
 #ifndef LOGGER_H
 #define LOGGER_H
+// 日志系统支持多线程安全，后台线程定时刷新日志文件
 
-typedef enum {
-    DEBUG,
-    INFO,
-    WARN,
-    ERROR
-} LogLevel;
+typedef enum { DEBUG, INFO, WARN, ERROR } LogLevel;
 
 void set_log_level_custom(LogLevel level);
-void set_log_file(const char* filename);
+void set_log_file(const char *filename);
 void close_log_file();
-void log_message(LogLevel level, const char* format, ...);
+void log_message(LogLevel level, const char *format, ...);
 
 #define LOG_DEBUG(format, ...) log_message(DEBUG, format, ##__VA_ARGS__)
 #define LOG_INFO(format, ...) log_message(INFO, format, ##__VA_ARGS__)
