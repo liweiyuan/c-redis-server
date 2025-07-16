@@ -1,9 +1,8 @@
 #include "parser.h"
-#include "logger.h"
+#include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 #include <strings.h>
-#include <stdlib.h>
-#include <stdio.h>
 
 #define MAX_COMMANDS 10
 
