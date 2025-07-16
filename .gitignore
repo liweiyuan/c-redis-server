@@ -29,6 +29,7 @@ cmake_install.cmake
 *.opendb
 *.VC.db
 *.VC.opendb
+.kiro/
 
 # clangd cache
 .cache/
